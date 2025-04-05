@@ -15,6 +15,8 @@ public class UserDTO {
     @NotBlank(message = "Password is required")
     private String password;
 
+    public record LoginDTO(String email, String password){}
+
     public String getName(){
         return name;
     }
