@@ -30,7 +30,7 @@ public class UserService {
         // Encrypt Password
         String encryptedPassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(encryptedPassword);
-        
+
         return userRepository.save(user);
     }
 
